@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070910" />
+  <title>Zenith Client — Minecraft, Evolved</title>
+  <meta name="description" content="Zenith Client is a next-generation Minecraft launcher concept built around performance, mods, profiles, and intelligent setup." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Zenith Client home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img"><path d="M32 5 55 20 47 50 32 59 17 50 9 20 32 5Z" fill="none" stroke="currentColor" stroke-width="4"/><path d="m18 21 27 0-18 22h21" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>ZENITH</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#ai">Zenith AI</a>
+        <a href="#versions">Versions</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="button ghost desktop-only" href="#download">Download</a>
+        <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="grid-floor"></div>
+
+      <div class="container hero-content reveal">
+        <div class="eyebrow"><span class="pulse"></span> A NEW WAY TO PLAY MINECRAFT</div>
+        <h1>Minecraft.<br><span class="gradient-text">Rebuilt around you.</span></h1>
+        <p class="hero-copy">One clean client for performance, mods, profiles and every world you jump into — with an AI assistant built to handle the annoying setup.</p>
+        <div class="hero-cta">
+          <a class="button primary magnetic" href="#download">
+            <span>Download for Windows</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="text-link" href="#features">Explore Zenith <span>↘</span></a>
+        </div>
+        <div class="platforms"><span>Windows</span><span>macOS</span><span>Linux</span><span>Java Edition</span></div>
+      </div>
+
+      <div class="container showcase-wrap reveal delay-1">
+        <div class="showcase" id="tiltCard">
+          <div class="showcase-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <div class="bar-title">ZENITH LAUNCHER</div>
+            <div class="bar-status"><span></span> ONLINE</div>
+          </div>
+          <div class="launcher-shell">
+            <aside class="launcher-side">
+              <div class="mini-logo">Z</div>
+              <button class="side-active" aria-label="Home">⌂</button>
+              <button aria-label="Profiles">◇</button>
+              <button aria-label="Mods">✦</button>
+              <button aria-label="AI">⌁</button>
+              <button class="side-bottom" aria-label="Settings">⚙</button>
+            </aside>
+            <div class="launcher-main">
+              <div class="launcher-top"><div><span class="micro">GOOD AFTERNOON</span><h3>Ready to play?</h3></div><div class="avatar">V</div></div>
+              <div class="game-card">
+                <div class="game-art">
+                  <div class="mountain m1"></div><div class="mountain m2"></div><div class="sun"></div>
+                  <div class="game-overlay"><span>PROFILE</span><strong>Zenith Performance</strong><small>Minecraft 1.21.8 · Fabric</small></div>
+                </div>
+                <div class="launch-row">
+                  <div><small>SELECTED VERSION</small><b>1.21.8</b></div>
+                  <button>LAUNCH <span>→</span></button>
+                </div>
+              </div>
+              <div class="launcher-bottom">
+                <div class="stat-card"><span>⚡</span><div><small>FPS BOOST</small><b>Optimized</b></div></div>
+                <div class="stat-card"><span>✦</span><div><small>ACTIVE MODS</small><b>27 Mods</b></div></div>
+                <div class="ai-mini"><div class="ai-dot"></div><div><small>ZENITH AI</small><b>“Add motion blur”</b></div><span>↗</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-sm">
+      <div class="container stat-grid reveal">
+        <div><strong data-count="1">01</strong><span>Single install</span></div>
+        <div><strong data-count="100">100+</strong><span>Mods supported</span></div>
+        <div><strong data-count="3">03</strong><span>Desktop platforms</span></div>
+        <div><strong>AI</strong><span>Built into launcher</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="kicker">THE CLIENT</span><h2>Everything you need.<br><span>Nothing in the way.</span></h2></div>
+          <p>Zenith is designed as one focused place for launching, tuning and customizing Minecraft without bouncing between folders, launchers and websites.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card large reveal">
+            <div class="card-copy"><span class="card-number">01</span><h3>Performance first.</h3><p>Profiles built around fast startup, smoother frame pacing and clean resource usage.</p></div>
+            <div class="fps-visual"><div class="fps-label"><small>LIVE PERFORMANCE</small><strong>486 <span>FPS</span></strong></div><svg viewBox="0 0 600 180" preserveAspectRatio="none"><path class="chart-glow" d="M0 142 C45 132 70 150 115 125 S180 116 215 127 285 72 326 94 392 86 430 69 493 76 540 43 600 53"/><path class="chart-line" d="M0 142 C45 132 70 150 115 125 S180 116 215 127 285 72 326 94 392 86 430 69 493 76 540 43 600 53"/></svg></div>
+          </article>
+
+          <article class="feature-card reveal delay-1">
+            <div class="card-copy"><span class="card-number">02</span><h3>Your mods, organized.</h3><p>Create different profiles for PvP, SMP, shaders or survival and keep each setup separate.</p></div>
+            <div class="mod-stack"><div><span>✦</span><b>Sodium</b><i>Enabled</i></div><div><span>◈</span><b>Iris Shaders</b><i>Enabled</i></div><div><span>⚡</span><b>Lithium</b><i>Enabled</i></div></div>
+          </article>
+
+          <article class="feature-card reveal delay-2">
+            <div class="card-copy"><span class="card-number">03</span><h3>One install. Many versions.</h3><p>Switch between modern and legacy Minecraft profiles from the same launcher.</p></div>
+            <div class="version-cloud"><span>1.21.8</span><span>1.21.4</span><span>1.20.4</span><span>1.19.4</span><span>1.12.2</span><span>1.8.9</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-section" id="ai">
+      <div class="ai-grid-bg"></div>
+      <div class="container ai-layout">
+        <div class="ai-copy reveal">
+          <span class="kicker">ZENITH AI</span>
+          <h2>Tell it what you want.<br><span>Skip the setup.</span></h2>
+          <p>The vision for Zenith AI is simple: ask for a trusted mod or performance change in normal language and let the launcher handle the setup.</p>
+          <div class="ai-points">
+            <div><span>01</span><p><b>Ask naturally.</b> “Install a motion blur mod for 1.21.8.”</p></div>
+            <div><span>02</span><p><b>Match compatibility.</b> Zenith checks your selected version and loader.</p></div>
+            <div><span>03</span><p><b>Install cleanly.</b> Keep files attached to the correct profile.</p></div>
+          </div>
+        </div>
+
+        <div class="ai-panel-wrap reveal delay-1">
+          <div class="ai-panel">
+            <div class="ai-panel-top"><div><span class="ai-symbol">Z</span><b>Zenith AI</b></div><span class="beta">CONCEPT</span></div>
+            <div class="conversation">
+              <div class="message user-msg">Can you install motion blur for my 1.21.8 profile?</div>
+              <div class="message ai-msg"><span class="ai-avatar">Z</span><div>I found a compatible option for your Fabric profile.<div class="found-mod"><div class="mod-icon">M</div><div><b>Motion Blur</b><small>Compatible · Fabric · 1.21.x</small></div><button>Install</button></div></div></div>
+              <div class="message ai-msg second"><span class="ai-avatar">Z</span><div>Done. It will be active the next time you launch <b>Zenith Performance</b>.</div></div>
+            </div>
+            <div class="prompt-bar"><span>Ask Zenith anything...</span><button>↑</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="versions">
+      <div class="container">
+        <div class="center-head reveal"><span class="kicker">PLAY YOUR WAY</span><h2>From classic PvP to the latest release.</h2><p>Build separate profiles for the Minecraft versions and loaders you actually use.</p></div>
+        <div class="version-track reveal delay-1">
+          <div class="track-line"></div>
+          <div class="version-node"><i></i><b>1.8.9</b><span>Legacy PvP</span></div>
+          <div class="version-node"><i></i><b>1.12.2</b><span>Modded Classic</span></div>
+          <div class="version-node"><i></i><b>1.20.4</b><span>Modern</span></div>
+          <div class="version-node active"><i></i><b>1.21.x</b><span>Latest</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-section" id="download">
+      <div class="container reveal">
+        <div class="download-card">
+          <div class="download-glow"></div>
+          <span class="kicker">YOUR NEXT LAUNCH</span>
+          <h2>Reach your <span class="gradient-text">Zenith.</span></h2>
+          <p>Download the website demo now. The actual Zenith launcher/client is the next build.</p>
+          <div class="download-buttons">
+            <button class="button primary disabled-download" type="button"><span>Windows · Coming Soon</span><span>⊞</span></button>
+            <button class="button dark disabled-download" type="button"><span>macOS · Coming Soon</span><span>⌘</span></button>
+            <button class="button dark disabled-download" type="button"><span>Linux · Coming Soon</span><span>◈</span></button>
+          </div>
+          <small class="download-note">Zenith Client is currently a concept project and is not affiliated with Mojang or Microsoft.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-title reveal"><span class="kicker">FAQ</span><h2>Questions,<br>answered.</h2></div>
+        <div class="accordion reveal delay-1">
+          <details open><summary>Is Zenith Client available yet?<span>+</span></summary><p>Not yet. This website is the first polished public-facing concept. The launcher and client still need to be built and tested.</p></details>
+          <details><summary>Will Zenith support multiple Minecraft versions?<span>+</span></summary><p>That is a core goal: profiles for modern and legacy Java Edition versions, with version-specific loader and mod handling.</p></details>
+          <details><summary>What is Zenith AI supposed to do?<span>+</span></summary><p>It is planned as a launcher assistant for tasks such as finding compatible trusted mods, explaining conflicts and helping configure profiles.</p></details>
+          <details><summary>Is this Lunar Client or Feather Client?<span>+</span></summary><p>No. Zenith is an independent concept with its own branding and interface, inspired by the quality bar of modern Minecraft clients.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand" href="#top"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M32 5 55 20 47 50 32 59 17 50 9 20 32 5Z" fill="none" stroke="currentColor" stroke-width="4"/><path d="m18 21 27 0-18 22h21" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>ZENITH</span></a><p>Take Minecraft further.</p></div>
+      <div><span>PRODUCT</span><a href="#features">Features</a><a href="#ai">Zenith AI</a><a href="#download">Download</a></div>
+      <div><span>COMMUNITY</span><a href="#">Discord</a><a href="#">YouTube</a><a href="#">X / Twitter</a></div>
+      <div><span>LEGAL</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#faq">FAQ</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Zenith Client. Concept website.</span><span>Not affiliated with Mojang Studios or Microsoft.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
