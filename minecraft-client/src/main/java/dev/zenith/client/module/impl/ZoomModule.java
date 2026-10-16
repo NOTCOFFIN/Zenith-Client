@@ -5,7 +5,11 @@ import dev.zenith.client.module.Category;
 import dev.zenith.client.module.Module;
 import dev.zenith.client.module.setting.BooleanSetting;
 import dev.zenith.client.module.setting.NumberSetting;
+import com.mojang.blaze3d.platform.InputConstants;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import org.lwjgl.glfw.GLFW;
 
 /** Hold the zoom key (default C) to narrow the field of view. */
 public final class ZoomModule extends Module {
@@ -20,7 +24,23 @@ public final class ZoomModule extends Module {
 
     public boolean active() {
         Minecraft mc = Minecraft.getInstance();
-        return enabled() && mc.screen == null && ZenithClient.get() != null && ZenithClient.get().zoomKey().isDown();
+        return enabled() && mc.screen == null && ZenithClient.get() != null && isHeld(mc, ZenithClient.get().zoomKey());
+    }
+
+    /**
+     * Vanilla only routes a key press to one KeyMapping per key, so a shared binding (C is also
+     * "Save Hotbar Activator") can starve ours. Read the bound key's physical state instead.
+     */
+    private static boolean isHeld(Minecraft mc, KeyMapping mapping) {
+        if (mapping.isDown()) return true;
+        InputConstants.Key key = KeyBindingHelper.getBoundKeyOf(mapping);
+        if (key.getValue() < 0) return false;
+        long window = mc.getWindow().getWindow();
+        return switch (key.getType()) {
+            case KEYSYM -> InputConstants.isKeyDown(window, key.getValue());
+            case MOUSE -> GLFW.glfwGetMouseButton(window, key.getValue()) == GLFW.GLFW_PRESS;
+            default -> false;
+        };
     }
 
     @Override public void tick(Minecraft mc) {
