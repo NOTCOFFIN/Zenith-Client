@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.main.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist-electron/scripts-build" },
+  "include": ["scripts", "src/main", "src/shared"],
+  "exclude": ["src/main/index.ts", "src/main/ipc.ts", "src/main/secure.ts"]
+}

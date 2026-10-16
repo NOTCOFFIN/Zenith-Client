@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "minecraftVersion": "1.21.1",
+      "launcher": "tested",
+      "fabric": "tested",
+      "zenithClient": "tested",
+      "notes": "Primary target. Install + launch verified on Linux (offline dev account, Mesa llvmpipe). Zenith in-game client, Fabric API, Sodium, Lithium, FerriteCore. Microsoft sign-in untested (needs an approved Azure client ID)."
+    }
+  ]
+}

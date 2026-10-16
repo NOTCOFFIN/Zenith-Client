@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "zenith",
+  "version": "${version}",
+  "name": "Zenith Client",
+  "description": "Reach Your Peak. Zenith Client's in-game menu, HUD, modules and main menu.",
+  "authors": ["Zenith Client"],
+  "contact": { "homepage": "https://github.com/NOTCOFFIN/Zenith-Client", "sources": "https://github.com/NOTCOFFIN/Zenith-Client" },
+  "license": "MIT",
+  "icon": "assets/zenith/icon.png",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.zenith.client.ZenithClient"] },
+  "mixins": ["zenith.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.1", "java": ">=21", "fabric-api": "*" }
+}
