@@ -38,7 +38,7 @@ Verified environment: Ubuntu 22.04, Node 20, JDK 21 (game) / JDK 25 (Gradle), Me
 | Notifications (slide-in toasts) | Tested | |
 | `/zenith` client commands | Tested | help, menu, hud, list, toggle/enable/disable, info, set, config, notify, version |
 | HUD: FPS, Coordinates, Keystrokes, CPS, Armor, Ping, Clock, Memory, Server address | Partial | FPS/Coordinates/Keystrokes seen in game; others compile, not individually verified |
-| HUD editor (drag, snap to centre, scroll to scale, right-click hide) | Tested (partial) | Drag + scroll-scale verified in-game and persisted to config; right-click hide not yet exercised |
+| HUD editor (drag, snap to centre, scroll to scale, right-click hide) | Tested | Drag, scroll-scale and right-click hide (with toast) verified in game; layout persisted to config. Snap-to-centre not specifically exercised |
 | Zoom | Tested | Holding C magnifies the view and releases back to normal FOV (fixed a conflict with vanilla's C "Save Hotbar Activator" binding) |
 | Dynamic FPS | Tested | With pause-on-lost-focus off: 15 FPS unfocused vs ~55 FPS focused on llvmpipe |
 | Toggle Sprint | Tested | Holding only W for 2 s on a flat test strip: 8.6 blocks with it disabled vs 13.2 blocks enabled (sprint speed) |
