@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": "2026-10-launcher-preview",
+      "title": "Zenith Launcher preview",
+      "date": "2026-10-16",
+      "tag": "Release",
+      "body": "The first Zenith launcher build can install Minecraft 1.21.1 with Fabric, set up the Zenith performance stack (Sodium, Lithium, FerriteCore) and launch the game with the Zenith in-game client."
+    },
+    {
+      "id": "2026-10-ingame-client",
+      "title": "In-game client: press Right Shift",
+      "date": "2026-10-16",
+      "tag": "Client",
+      "body": "Open the Zenith menu in-game with Right Shift. HUD modules, toggle sprint, zoom, fullbright and more can be configured live, and /zenith commands are handled locally."
+    }
+  ]
+}
